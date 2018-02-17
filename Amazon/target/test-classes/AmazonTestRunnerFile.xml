@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon automation test suite" parallel="false">
+    <parameter name="usecloudEnv" value="false"/>
+        <parameter name="cloudEnvName" value="false"/>
+       <parameter name="OS" value="mac"/>
+       <parameter name="OS_version" value="10"/>
+
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browser_version" value="10"/>
+    <parameter name="url" value="https://www.amazon.com/"/>
+    <test name="amazon home test">
+        <classes>
+            <class name="test.HomeTest"/>
+        </classes>
+    </test>
+  </suite>
